@@ -79,31 +79,7 @@ body {
 	margin:0 0 20px 0;
 	display:inline-block;
 	}
-.form_block p.ou {
-	margin:0 0 20px 0;
-	font-size:18px;
-	color:#999999;
-	text-transform:uppercase;
-	position:relative;
-	}
-.ou::before {
-	content:"";
-	position:absolute;
-	top:50%;
-	width:115px;
-	border-bottom:1px solid #000000;
-	border-top:1px solid #666666;
-	left:95px;
-	}
-.ou::after {
-	content:"";
-	position:absolute;
-	top:50%;
-	width:115px;
-	border-bottom:1px solid #000000;
-	border-top:1px solid #666666;
-	right:95px;
-	}	
+	
 .form_block {
 	position: absolute;
   	top: 50%;
@@ -127,10 +103,11 @@ body {
 .form_block p {
 	font-size:11px;
 	}
+.form_block form { width:60%; margin:0 auto;}
 .form_block input {
 	display:block;
 	margin:0 auto 20px;
-	width:60%;
+	width:100%;
 	background:#111111;
 	line-height:35px;
 	padding:0 20px;
@@ -165,7 +142,20 @@ body {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	cursor:pointer;
-	}	
+	}
+fieldset {
+	border:none;
+	border-top:1px solid #000000;
+	padding:10px 0 0 0;
+	}
+fieldset legend {
+	font-size:18px;
+	color:#999999;
+	text-transform:uppercase;
+	padding:0 10px;
+	}
+	
+		
 table { width:100%; background:#fff; border-collapse:collapse;}
 table td { border:5px solid black; color:white; padding:28px 0;}
 .red { background:red; color:red;}
